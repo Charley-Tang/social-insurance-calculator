@@ -1,0 +1,28 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.frame-box {
+  background-color: lightgray;
+  width: 720px;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 16px;
+}
+
+.input-area {
+  margin-top: 16px;
+}
+
+#btn-start {
+  display: none;
+}

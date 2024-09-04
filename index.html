@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>社保计算器</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame-box">
+      <div class="title">社保计算器</div>
+
+      <div class="input-area">
+        <label for="salary">税前工资：</label>
+        <input type="number" name="salary" id="salary" value="10240" />
+        <br />
+
+        <label for="hurt">工伤比例：</label>
+        <span style="padding: 4px" id="hurt-preview">2%</span>
+        <input type="range" name="hurt" id="hurt" min="2" max="14" value="2" />
+        <br />
+
+        <label for="house-personal">公积金（个人）比例：</label>
+        <span style="padding: 4px" id="house-personal-preview">5</span>
+        <input
+          type="range"
+          name="house-personal"
+          id="house-personal"
+          min="5"
+          max="12"
+          value="5"
+        />
+        <br />
+
+        <label for="house-company">公积金（公司）比例：</label>
+        <span style="padding: 4px" id="house-company-preview">5</span>
+        <input
+          type="range"
+          name="house-company"
+          id="house-company"
+          min="5"
+          max="12"
+          value="5"
+        />
+        <br />
+
+        <button id="btn-start">计算</button>
+      </div>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
